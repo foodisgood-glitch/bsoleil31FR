@@ -1,0 +1,125 @@
+--https://www.roblox.com/games/2683386222/15-NEW-PETS-Toy-Simulator
+
+
+
+
+
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/preztel/AzureLibrary/master/uilib.lua", true))()
+
+local AutoTab = Library:CreateTab("Toy Simulator GUI","things", true)
+local credits = Library:CreateTab("Credits","things", true)
+
+
+credits:CreateButton("Our Discords", function() --you dont need "arg" for a button
+game:GetService("CoreGui").uiui:nothing()
+end)
+
+credits:CreateButton("masterkyllian#1723", function() --you dont need "arg" for a button
+game:GetService("CoreGui").uiui:nothing()
+end)
+
+credits:CreateButton("https://discord.gg/Sr8exX4", function() --you dont need "arg" for a button
+game:GetService("CoreGui").uiui:nothing()
+end)
+
+credits:CreateButton("bsoleil31FR[inchala ptn]#9001", function() --you dont need "arg" for a button
+game:GetService("CoreGui").uiui:nothing()
+end)
+
+credits:CreateButton("https://discord.gg/PdUTrVG", function() --you dont need "arg" for a button
+game:GetService("CoreGui").uiui:nothing()
+end)
+
+credits:CreateButton("Big C#5347", function() --you dont need "arg" for a button
+game:GetService("CoreGui").uiui:nothing()
+end)
+
+AutoTab:CreateToggle("Auto Sell", function(arg) --the (arg) is if the checkbox is toggled or not
+    if arg then
+        _G.Basic = true 
+        while wait(0) and _G.Basic do
+            local A_1 = "SellTeleport"
+local Event = game:GetService("ReplicatedStorage").EVENTS.NETWORKING
+Event:FireServer(A_1)
+
+        end
+    else
+        _G.Basic = false
+    end
+end)
+
+AutoTab:CreateToggle("All Chest Reward", function(arg) --the (arg) is if the checkbox is toggled or not
+    if arg then
+        _G.Basic = true 
+        while wait(0) and _G.Basic do
+            local A_1 = "ChestReward"
+local A_2 = "Chest1"
+local Event = game:GetService("ReplicatedStorage").EVENTS.NETWORKING
+Event:FireServer(A_1, A_2)
+
+local A_1 = "ChestReward"
+local A_2 = "Chest2"
+local Event = game:GetService("ReplicatedStorage").EVENTS.NETWORKING
+Event:FireServer(A_1, A_2)
+
+local A_1 = "ChestReward"
+local A_2 = "Chest3"
+local Event = game:GetService("ReplicatedStorage").EVENTS.NETWORKING
+Event:FireServer(A_1, A_2)
+
+local A_1 = "ChestReward"
+local A_2 = "Chest4"
+local Event = game:GetService("ReplicatedStorage").EVENTS.NETWORKING
+Event:FireServer(A_1, A_2)
+
+local A_1 = "ChestReward"
+local A_2 = "Chest5"
+local Event = game:GetService("ReplicatedStorage").EVENTS.NETWORKING
+Event:FireServer(A_1, A_2)
+
+local A_1 = "ChestReward"
+local A_2 = "Chest6"
+local Event = game:GetService("ReplicatedStorage").EVENTS.NETWORKING
+Event:FireServer(A_1, A_2)
+
+local A_1 = "ChestReward"
+local A_2 = "Chest7"
+local Event = game:GetService("ReplicatedStorage").EVENTS.NETWORKING
+Event:FireServer(A_1, A_2)
+
+local A_1 = "ChestReward"
+local A_2 = "Chest8"
+local Event = game:GetService("ReplicatedStorage").EVENTS.NETWORKING
+Event:FireServer(A_1, A_2)
+
+local A_1 = "ChestReward"
+local A_2 = "Chest9"
+local Event = game:GetService("ReplicatedStorage").EVENTS.NETWORKING
+Event:FireServer(A_1, A_2)
+
+local A_1 = "ChestReward"
+local A_2 = "Chest10"
+local Event = game:GetService("ReplicatedStorage").EVENTS.NETWORKING
+Event:FireServer(A_1, A_2)
+
+        end
+    else
+        _G.Basic = false
+    end
+end)
+
+AutoTab:CreateButton("Destroy Gui :D", function() --you dont need "arg" for a button
+game:GetService("CoreGui").uiui:Destroy()
+end)
+
+teleports:CreateButton("Sell x4", function() --you dont need "arg" for a button
+game.Players.LocalPlayer.character.HumanoidRootPart.CFrame = CFrame.new(-164.111252, 22400.8203, 41.353611)
+end)
+
+--| Anti AFK | By Altix#3395
+    local Virtual = game:service'VirtualUser'
+    game:service'Players'.LocalPlayer.Idled:connect(function()
+        Virtual:CaptureController()
+        Virtual:ClickButton2(Vector2.new())
+        wait(2)
+    end)

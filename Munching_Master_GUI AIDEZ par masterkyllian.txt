@@ -1,0 +1,310 @@
+--https://web.roblox.com/games/3859039810/UPD-Munching-Masters
+
+
+
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/preztel/AzureLibrary/master/uilib.lua", true))()
+
+local AutoTab = Library:CreateTab("Munching Master GUI","things", true)
+local teleports = Library:CreateTab("Teleports","things", true)
+local credits = Library:CreateTab("Credits","things", true)
+
+
+credits:CreateButton("Our Discords", function() --you dont need "arg" for a button
+game:GetService("CoreGui").uiui:nothing()
+end)
+
+credits:CreateButton("masterkyllian#1723", function() --you dont need "arg" for a button
+game:GetService("CoreGui").uiui:nothing()
+end)
+
+credits:CreateButton("https://discord.gg/Sr8exX4", function() --you dont need "arg" for a button
+game:GetService("CoreGui").uiui:nothing()
+end)
+
+credits:CreateButton("bsoleil31FR[inchala ptn]#9001", function() --you dont need "arg" for a button
+game:GetService("CoreGui").uiui:nothing()
+end)
+
+credits:CreateButton("https://discord.gg/PdUTrVG", function() --you dont need "arg" for a button
+game:GetService("CoreGui").uiui:nothing()
+end)
+
+credits:CreateButton("Big C#5347", function() --you dont need "arg" for a button
+game:GetService("CoreGui").uiui:nothing()
+end)
+
+AutoTab:CreateToggle("Auto Eat", function(arg) --the (arg) is if the checkbox is toggled or not
+    if arg then
+        _G.Basic = true 
+        while wait(0) and _G.Basic do
+           local Event = game:GetService("ReplicatedStorage").Events.Player.Eat
+Event:FireServer()
+        end
+    else
+        _G.Basic = false
+    end
+end)
+
+AutoTab:CreateToggle("Auot BUy Foods", function(arg) --the (arg) is if the checkbox is toggled or not
+    if arg then
+        _G.Basic = true 
+        while wait(0) and _G.Basic do
+            local A_1 = "Food"
+local A_2 = "Bacon"
+local Event = game:GetService("ReplicatedStorage").Events.Player.Buy
+Event:FireServer(A_1, A_2)
+
+  local A_1 = "Food"
+local A_2 = "Pizza"
+local Event = game:GetService("ReplicatedStorage").Events.Player.Buy
+Event:FireServer(A_1, A_2)
+
+  local A_1 = "Food"
+local A_2 = "Watermelon"
+local Event = game:GetService("ReplicatedStorage").Events.Player.Buy
+Event:FireServer(A_1, A_2)
+
+  local A_1 = "Food"
+local A_2 = "Hotdog"
+local Event = game:GetService("ReplicatedStorage").Events.Player.Buy
+Event:FireServer(A_1, A_2)
+
+  local A_1 = "Food"
+local A_2 = "Pie"
+local Event = game:GetService("ReplicatedStorage").Events.Player.Buy
+Event:FireServer(A_1, A_2)
+
+  local A_1 = "Food"
+local A_2 = "Cookie"
+local Event = game:GetService("ReplicatedStorage").Events.Player.Buy
+Event:FireServer(A_1, A_2)
+
+  local A_1 = "Food"
+local A_2 = "Pancake"
+local Event = game:GetService("ReplicatedStorage").Events.Player.Buy
+Event:FireServer(A_1, A_2)
+
+  local A_1 = "Food"
+local A_2 = "Donut"
+local Event = game:GetService("ReplicatedStorage").Events.Player.Buy
+Event:FireServer(A_1, A_2)
+
+  local A_1 = "Food"
+local A_2 = "Ice cream"
+local Event = game:GetService("ReplicatedStorage").Events.Player.Buy
+Event:FireServer(A_1, A_2)
+
+  local A_1 = "Food"
+local A_2 = "Sugar Cookie"
+local Event = game:GetService("ReplicatedStorage").Events.Player.Buy
+Event:FireServer(A_1, A_2)
+
+  local A_1 = "Food"
+local A_2 = "Turkey Leg"
+local Event = game:GetService("ReplicatedStorage").Events.Player.Buy
+Event:FireServer(A_1, A_2)
+
+  local A_1 = "Food"
+local A_2 = "Cake"
+local Event = game:GetService("ReplicatedStorage").Events.Player.Buy
+Event:FireServer(A_1, A_2)
+
+  local A_1 = "Food"
+local A_2 = "Burger"
+local Event = game:GetService("ReplicatedStorage").Events.Player.Buy
+Event:FireServer(A_1, A_2)
+
+        end
+    else
+        _G.Basic = false
+    end
+end)
+
+AutoTab:CreateToggle("Auto Buy Sac", function(arg) --the (arg) is if the checkbox is toggled or not
+    if arg then
+        _G.Basic = true 
+        while wait(0) and _G.Basic do
+           local A_1 = "Metabolism"
+local A_2 = "Skinny"
+local Event = game:GetService("ReplicatedStorage").Events.Player.Buy
+Event:FireServer(A_1, A_2)
+
+           local A_1 = "Metabolism"
+local A_2 = "Average"
+local Event = game:GetService("ReplicatedStorage").Events.Player.Buy
+Event:FireServer(A_1, A_2)
+
+           local A_1 = "Metabolism"
+local A_2 = "Pudgy"
+local Event = game:GetService("ReplicatedStorage").Events.Player.Buy
+Event:FireServer(A_1, A_2)
+   
+local A_1 = "Metabolism"
+local A_2 = "Big"
+local Event = game:GetService("ReplicatedStorage").Events.Player.Buy
+Event:FireServer(A_1, A_2)
+
+local A_1 = "Metabolism"
+local A_2 = "Fat"
+local Event = game:GetService("ReplicatedStorage").Events.Player.Buy
+Event:FireServer(A_1, A_2)
+
+local A_1 = "Metabolism"
+local A_2 = "Chunky"
+local Event = game:GetService("ReplicatedStorage").Events.Player.Buy
+Event:FireServer(A_1, A_2)
+
+local A_1 = "Metabolism"
+local A_2 = "Hefty"
+local Event = game:GetService("ReplicatedStorage").Events.Player.Buy
+Event:FireServer(A_1, A_2)
+
+local A_1 = "Metabolism"
+local A_2 = "Muffin Top"
+local Event = game:GetService("ReplicatedStorage").Events.Player.Buy
+Event:FireServer(A_1, A_2)
+
+local A_1 = "Metabolism"
+local A_2 = "Huge"
+local Event = game:GetService("ReplicatedStorage").Events.Player.Buy
+Event:FireServer(A_1, A_2)
+
+local A_1 = "Metabolism"
+local A_2 = "Giant"
+local Event = game:GetService("ReplicatedStorage").Events.Player.Buy
+Event:FireServer(A_1, A_2)
+
+local A_1 = "Metabolism"
+local A_2 = "Massive"
+local Event = game:GetService("ReplicatedStorage").Events.Player.Buy
+Event:FireServer(A_1, A_2)
+
+local A_1 = "Metabolism"
+local A_2 = "Enormous"
+local Event = game:GetService("ReplicatedStorage").Events.Player.Buy
+Event:FireServer(A_1, A_2)
+
+local A_1 = "Metabolism"
+local A_2 = "Toxic"
+local Event = game:GetService("ReplicatedStorage").Events.Player.Buy
+Event:FireServer(A_1, A_2)
+
+local A_1 = "Metabolism"
+local A_2 = "Colossal"
+local Event = game:GetService("ReplicatedStorage").Events.Player.Buy
+Event:FireServer(A_1, A_2)
+        end
+    else
+        _G.Basic = false
+    end
+end)
+
+AutoTab:CreateToggle("Auto Buy Seasons", function(arg) --the (arg) is if the checkbox is toggled or not
+    if arg then
+        _G.Basic = true 
+        while wait(0) and _G.Basic do
+           local A_1 = "Seasoning"
+local A_2 = "Spicy"
+local Event = game:GetService("ReplicatedStorage").Events.Player.Buy
+Event:FireServer(A_1, A_2)
+
+local A_1 = "Seasoning"
+local A_2 = "Glitter"
+local Event = game:GetService("ReplicatedStorage").Events.Player.Buy
+Event:FireServer(A_1, A_2)
+
+local A_1 = "Seasoning"
+local A_2 = "Fire"
+local Event = game:GetService("ReplicatedStorage").Events.Player.Buy
+Event:FireServer(A_1, A_2)
+
+local A_1 = "Seasoning"
+local A_2 = "Ice"
+local Event = game:GetService("ReplicatedStorage").Events.Player.Buy
+Event:FireServer(A_1, A_2)
+
+local A_1 = "Seasoning"
+local A_2 = "Electric"
+local Event = game:GetService("ReplicatedStorage").Events.Player.Buy
+Event:FireServer(A_1, A_2)
+
+local A_1 = "Seasoning"
+local A_2 = "Crystal"
+local Event = game:GetService("ReplicatedStorage").Events.Player.Buy
+Event:FireServer(A_1, A_2)
+
+local A_1 = "Seasoning"
+local A_2 = "Golden"
+local Event = game:GetService("ReplicatedStorage").Events.Player.Buy
+Event:FireServer(A_1, A_2)
+
+local A_1 = "Seasoning"
+local A_2 = "Radioactive"
+local Event = game:GetService("ReplicatedStorage").Events.Player.Buy
+Event:FireServer(A_1, A_2)
+
+local A_1 = "Seasoning"
+local A_2 = "Galaxy"
+local Event = game:GetService("ReplicatedStorage").Events.Player.Buy
+Event:FireServer(A_1, A_2)
+
+local A_1 = "Seasoning"
+local A_2 = "Alien"
+local Event = game:GetService("ReplicatedStorage").Events.Player.Buy
+Event:FireServer(A_1, A_2)
+
+local A_1 = "Seasoning"
+local A_2 = "MLG"
+local Event = game:GetService("ReplicatedStorage").Events.Player.Buy
+Event:FireServer(A_1, A_2)
+
+local A_1 = "Seasoning"
+local A_2 = "Raimbow"
+local Event = game:GetService("ReplicatedStorage").Events.Player.Buy
+Event:FireServer(A_1, A_2)
+
+local A_1 = "Seasoning"
+local A_2 = "Diamond"
+local Event = game:GetService("ReplicatedStorage").Events.Player.Buy
+Event:FireServer(A_1, A_2)
+
+local A_1 = "Seasoning"
+local A_2 = "Void"
+local Event = game:GetService("ReplicatedStorage").Events.Player.Buy
+Event:FireServer(A_1, A_2)
+        end
+    else
+        _G.Basic = false
+    end
+end)
+
+AutoTab:CreateToggle("Speedhack", function(arg) --the (arg) is if the checkbox is toggled or not
+    if arg then
+        _G.Basic = true 
+        while wait(0) and _G.Basic do
+            game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 100
+        end
+    else
+        _G.Basic = false
+    end
+end)
+
+AutoTab:CreateButton("Destroy Gui :D", function() --you dont need "arg" for a button
+game:GetService("CoreGui").uiui:Destroy()
+end)
+
+teleports:CreateButton("Spawn", function() --you dont need "arg" for a button
+game.Players.LocalPlayer.character.HumanoidRootPart.CFrame = CFrame.new(267.207886, 3.99800491, 467.826996)
+end)
+
+teleports:CreateButton("Safe Zone", function() --you dont need "arg" for a button
+game.Players.LocalPlayer.character.HumanoidRootPart.CFrame = CFrame.new(-46.8610497, 3.99800491, 31.7004776)
+end)
+
+--| Anti AFK | By Altix#3395
+    local Virtual = game:service'VirtualUser'
+    game:service'Players'.LocalPlayer.Idled:connect(function()
+        Virtual:CaptureController()
+        Virtual:ClickButton2(Vector2.new())
+        wait(2)
+    end)

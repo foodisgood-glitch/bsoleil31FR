@@ -1,0 +1,586 @@
+---https://www.roblox.com/games/4330397559/GODS-Viking-Simulator
+
+
+
+
+
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/preztel/AzureLibrary/master/uilib.lua", true))()
+
+local AutoTab = Library:CreateTab("Viking Simulator GUI","things", true)
+local buy = Library:CreateTab("Auto Buy","things", true)
+local teleports = Library:CreateTab("Teleports","things", true)
+local eggs = Library:CreateTab("Auto Buy Eggs","things", true)
+local quest = Library:CreateTab("Auto Quest","things", true)
+local credits = Library:CreateTab("Credits","things", true)
+
+
+credits:CreateButton("Our Discords", function() --you dont need "arg" for a button
+game:GetService("CoreGui").uiui:nothing()
+end)
+
+credits:CreateButton("masterkyllian#1723", function() --you dont need "arg" for a button
+game:GetService("CoreGui").uiui:nothing()
+end)
+
+credits:CreateButton("https://discord.gg/Sr8exX4", function() --you dont need "arg" for a button
+game:GetService("CoreGui").uiui:nothing()
+end)
+
+credits:CreateButton("bsoleil31FR[inchala ptn]#9001", function() --you dont need "arg" for a button
+game:GetService("CoreGui").uiui:nothing()
+end)
+
+credits:CreateButton("https://discord.gg/PdUTrVG", function() --you dont need "arg" for a button
+game:GetService("CoreGui").uiui:nothing()
+end)
+
+credits:CreateButton("Big C#5347", function() --you dont need "arg" for a button
+game:GetService("CoreGui").uiui:nothing()
+end)
+
+AutoTab:CreateToggle("Speed Hack 150", function(arg) --the (arg) is if the checkbox is toggled or not
+    if arg then
+        _G.Basic = true 
+        while wait(0) and _G.Basic do
+            game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 150
+        end
+    else
+        _G.Basic = false
+    end
+end)
+
+buy:CreateToggle("Auto Buy Sword", function(arg) --the (arg) is if the checkbox is toggled or not
+    if arg then
+        _G.Basic = true 
+        while wait(0) and _G.Basic do
+            local A_1 = 1
+local A_2 = true
+local Event = game:GetService("ReplicatedStorage").Shop
+Event:FireServer(A_1, A_2)
+
+        end
+    else
+        _G.Basic = false
+    end
+end)
+
+buy:CreateToggle("Auto Buy Sheild", function(arg) --the (arg) is if the checkbox is toggled or not
+    if arg then
+        _G.Basic = true 
+        while wait(0) and _G.Basic do
+           local A_1 = 2
+local A_2 = true
+local Event = game:GetService("ReplicatedStorage").Shop
+Event:FireServer(A_1, A_2)
+        end
+    else
+        _G.Basic = false
+    end
+end)
+
+buy:CreateToggle("Auto Buy Bags", function(arg) --the (arg) is if the checkbox is toggled or not
+    if arg then
+        _G.Basic = true 
+        while wait(0) and _G.Basic do
+           local A_1 = 3
+local A_2 = true
+local Event = game:GetService("ReplicatedStorage").Shop
+Event:FireServer(A_1, A_2)
+        end
+    else
+        _G.Basic = false
+    end
+end)
+
+buy:CreateToggle("Auto Buy Bows", function(arg) --the (arg) is if the checkbox is toggled or not
+    if arg then
+        _G.Basic = true 
+        while wait(0) and _G.Basic do
+            local A_1 = 4
+local A_2 = true
+local Event = game:GetService("ReplicatedStorage").Shop
+Event:FireServer(A_1, A_2)
+        end
+    else
+        _G.Basic = false
+    end
+end)
+
+buy:CreateToggle("Auto Buy Ranks", function(arg) --the (arg) is if the checkbox is toggled or not
+    if arg then
+        _G.Basic = true 
+        while wait(0) and _G.Basic do
+           local A_1 = 5
+local A_2 = true
+local Event = game:GetService("ReplicatedStorage").Shop
+Event:FireServer(A_1, A_2)
+        end
+    else
+        _G.Basic = false
+    end
+end)
+
+buy:CreateToggle("Auto Buy Gods", function(arg) --the (arg) is if the checkbox is toggled or not
+    if arg then
+        _G.Basic = true 
+        while wait(0) and _G.Basic do
+           local A_1 = "Interact"
+local A_2 = "Thor"
+local Event = game:GetService("ReplicatedStorage").Gods
+Event:FireServer(A_1, A_2)
+
+local A_1 = "Interact"
+local A_2 = "Odin"
+local Event = game:GetService("ReplicatedStorage").Gods
+Event:FireServer(A_1, A_2)
+
+local A_1 = "Interact"
+local A_2 = "Loki"
+local Event = game:GetService("ReplicatedStorage").Gods
+Event:FireServer(A_1, A_2)
+
+local A_1 = "Interact"
+local A_2 = "Heimdall"
+local Event = game:GetService("ReplicatedStorage").Gods
+Event:FireServer(A_1, A_2)
+
+local A_1 = "Interact"
+local A_2 = "Freya"
+local Event = game:GetService("ReplicatedStorage").Gods
+Event:FireServer(A_1, A_2)
+
+local A_1 = "Interact"
+local A_2 = "Surtur"
+local Event = game:GetService("ReplicatedStorage").Gods
+Event:FireServer(A_1, A_2)
+
+        end
+    else
+        _G.Basic = false
+    end
+end)
+
+AutoTab:CreateToggle("FLY PRESS (E)", function(arg) --the (arg) is if the checkbox is toggled or not
+    if arg then
+        _G.Basic = true 
+        while wait(0) and _G.Basic do
+            local mouse = game.Players.LocalPlayer:GetMouse()
+repeat wait() until mouse
+local plr = game.Players.LocalPlayer
+local torso = plr.Character.Torso
+local flying = true
+local deb = true
+local ctrl = {f = 0, b = 0, l = 0, r = 0}
+local lastctrl = {f = 0, b = 0, l = 0, r = 0}
+local maxspeed = 50
+local speed = 0
+
+function Fly()
+local bg = Instance.new("BodyGyro", torso)
+bg.P = 9e4
+bg.maxTorque = Vector3.new(9e9, 9e9, 9e9)
+bg.cframe = torso.CFrame
+local bv = Instance.new("BodyVelocity", torso)
+bv.velocity = Vector3.new(0,0.1,0)
+bv.maxForce = Vector3.new(9e9, 9e9, 9e9)
+repeat wait()
+plr.Character.Humanoid.PlatformStand = true
+if ctrl.l + ctrl.r ~= 0 or ctrl.f + ctrl.b ~= 0 then
+speed = speed+.5+(speed/maxspeed)
+if speed > maxspeed then
+speed = maxspeed
+end
+elseif not (ctrl.l + ctrl.r ~= 0 or ctrl.f + ctrl.b ~= 0) and speed ~= 0 then
+speed = speed-1
+if speed < 0 then
+speed = 0
+end
+end
+if (ctrl.l + ctrl.r) ~= 0 or (ctrl.f + ctrl.b) ~= 0 then
+bv.velocity = ((game.Workspace.CurrentCamera.CoordinateFrame.lookVector * (ctrl.f+ctrl.b)) + ((game.Workspace.CurrentCamera.CoordinateFrame * CFrame.new(ctrl.l+ctrl.r,(ctrl.f+ctrl.b)*.2,0).p) - game.Workspace.CurrentCamera.CoordinateFrame.p))*speed
+lastctrl = {f = ctrl.f, b = ctrl.b, l = ctrl.l, r = ctrl.r}
+elseif (ctrl.l + ctrl.r) == 0 and (ctrl.f + ctrl.b) == 0 and speed ~= 0 then
+bv.velocity = ((game.Workspace.CurrentCamera.CoordinateFrame.lookVector * (lastctrl.f+lastctrl.b)) + ((game.Workspace.CurrentCamera.CoordinateFrame * CFrame.new(lastctrl.l+lastctrl.r,(lastctrl.f+lastctrl.b)*.2,0).p) - game.Workspace.CurrentCamera.CoordinateFrame.p))*speed
+else
+bv.velocity = Vector3.new(0,0.1,0)
+end
+bg.cframe = game.Workspace.CurrentCamera.CoordinateFrame * CFrame.Angles(-math.rad((ctrl.f+ctrl.b)*50*speed/maxspeed),0,0)
+until not flying
+ctrl = {f = 0, b = 0, l = 0, r = 0}
+lastctrl = {f = 0, b = 0, l = 0, r = 0}
+speed = 0
+bg:Destroy()
+bv:Destroy()
+plr.Character.Humanoid.PlatformStand = false
+end
+mouse.KeyDown:connect(function(key)
+if key:lower() == "e" then
+if flying then flying = false
+else
+flying = true
+Fly()
+end
+elseif key:lower() == "w" then
+ctrl.f = 1
+elseif key:lower() == "s" then
+ctrl.b = -1
+elseif key:lower() == "a" then
+ctrl.l = -1
+elseif key:lower() == "d" then
+ctrl.r = 1
+end
+end)
+mouse.KeyUp:connect(function(key)
+if key:lower() == "w" then
+ctrl.f = 0
+elseif key:lower() == "s" then
+ctrl.b = 0
+elseif key:lower() == "a" then
+ctrl.l = 0
+elseif key:lower() == "d" then
+ctrl.r = 0
+end
+end)
+Fly()
+        end
+    else
+        _G.Basic = false
+    end
+end)
+
+eggs:CreateToggle("Auto Buy Tier1 Eggs", function(arg) --the (arg) is if the checkbox is toggled or not
+    if arg then
+        _G.Basic = true 
+        while wait(0) and _G.Basic do
+          local A_1 = "Buy"
+local A_2 = 1
+local A_3 = game:GetService("Workspace").PetBuyers["Peaceful Keep"]
+local Event = game:GetService("ReplicatedStorage").UpdatePets
+Event:FireServer(A_1, A_2, A_3)
+
+        end
+    else
+        _G.Basic = false
+    end
+end)
+
+eggs:CreateToggle("Auto Buy Tier2 Eggs", function(arg) --the (arg) is if the checkbox is toggled or not
+    if arg then
+        _G.Basic = true 
+        while wait(0) and _G.Basic do
+          local A_1 = "Buy"
+local A_1 = "Buy"
+local A_2 = 1
+local A_3 = game:GetService("Workspace").PetBuyers["Fearsome Fortress"]
+local Event = game:GetService("ReplicatedStorage").UpdatePets
+Event:FireServer(A_1, A_2, A_3)
+
+
+        end
+    else
+        _G.Basic = false
+    end
+end)
+
+eggs:CreateToggle("Auto Buy Tier3 Eggs", function(arg) --the (arg) is if the checkbox is toggled or not
+    if arg then
+        _G.Basic = true 
+        while wait(0) and _G.Basic do
+          local A_1 = "Buy"
+local A_1 = "Buy"
+local A_2 = 1
+local A_3 = game:GetService("Workspace").PetBuyers["Enemy Jarldom"]
+local Event = game:GetService("ReplicatedStorage").UpdatePets
+Event:FireServer(A_1, A_2, A_3)
+
+
+        end
+    else
+        _G.Basic = false
+    end
+end)
+
+eggs:CreateToggle("Auto Buy Tier4 Eggs", function(arg) --the (arg) is if the checkbox is toggled or not
+    if arg then
+        _G.Basic = true 
+        while wait(0) and _G.Basic do
+         local A_1 = "Buy"
+local A_2 = 1
+local A_3 = game:GetService("Workspace").PetBuyers["Desert Stronghold"]
+local Event = game:GetService("ReplicatedStorage").UpdatePets
+Event:FireServer(A_1, A_2, A_3)
+
+
+        end
+    else
+        _G.Basic = false
+    end
+end)
+
+eggs:CreateToggle("Auto Buy Tier5 Eggs", function(arg) --the (arg) is if the checkbox is toggled or not
+    if arg then
+        _G.Basic = true 
+        while wait(0) and _G.Basic do
+      local A_1 = "Buy"
+local A_2 = 1
+local A_3 = game:GetService("Workspace").PetBuyers["Mysterious Orient"]
+local Event = game:GetService("ReplicatedStorage").UpdatePets
+Event:FireServer(A_1, A_2, A_3)
+
+
+        end
+    else
+        _G.Basic = false
+    end
+end)
+
+eggs:CreateToggle("Auto Buy Tier6 Eggs", function(arg) --the (arg) is if the checkbox is toggled or not
+    if arg then
+        _G.Basic = true 
+        while wait(0) and _G.Basic do
+local A_1 = "Buy"
+local A_2 = 1
+local A_3 = game:GetService("Workspace").PetBuyers["Deadly Deadlands"]
+local Event = game:GetService("ReplicatedStorage").UpdatePets
+Event:FireServer(A_1, A_2, A_3)
+
+
+        end
+    else
+        _G.Basic = false
+    end
+end)
+
+eggs:CreateToggle("Auto Buy Tier7 Eggs", function(arg) --the (arg) is if the checkbox is toggled or not
+    if arg then
+        _G.Basic = true 
+        while wait(0) and _G.Basic do
+          local A_1 = "Buy"
+local A_1 = "Buy"
+local A_2 = 1
+local A_3 = game:GetService("Workspace").PetBuyers["Atlantis Ruins"]
+local Event = game:GetService("ReplicatedStorage").UpdatePets
+Event:FireServer(A_1, A_2, A_3)
+
+
+        end
+    else
+        _G.Basic = false
+    end
+end)
+
+eggs:CreateToggle("Auto Buy Tier8 Eggs", function(arg) --the (arg) is if the checkbox is toggled or not
+    if arg then
+        _G.Basic = true 
+        while wait(0) and _G.Basic do
+    local A_1 = "Buy"
+local A_2 = 1
+local A_3 = game:GetService("Workspace").PetBuyers["Floating Isles"]
+local Event = game:GetService("ReplicatedStorage").UpdatePets
+Event:FireServer(A_1, A_2, A_3)
+
+
+
+        end
+    else
+        _G.Basic = false
+    end
+end)
+
+quest:CreateToggle("Auto Quest Zone 1", function(arg) --the (arg) is if the checkbox is toggled or not
+    if arg then
+        _G.Basic = true 
+        while wait(0) and _G.Basic do
+local A_1 = "Quest"
+local A_2 = game:GetService("Workspace").Quests["Peaceful Keep"]
+local Event = game:GetService("ReplicatedStorage").Quests
+Event:FireServer(A_1, A_2)
+
+
+
+
+        end
+    else
+        _G.Basic = false
+    end
+end)
+
+quest:CreateToggle("Auto Quest Zone 2", function(arg) --the (arg) is if the checkbox is toggled or not
+    if arg then
+        _G.Basic = true 
+        while wait(0) and _G.Basic do
+local A_1 = "Quest"
+local A_2 = game:GetService("Workspace").Quests["Fearsome Fortress"]
+local Event = game:GetService("ReplicatedStorage").Quests
+Event:FireServer(A_1, A_2)
+
+
+
+        end
+    else
+        _G.Basic = false
+    end
+end)
+
+quest:CreateToggle("Auto Quest Zone 3", function(arg) --the (arg) is if the checkbox is toggled or not
+    if arg then
+        _G.Basic = true 
+        while wait(0) and _G.Basic do
+local A_1 = "Quest"
+local A_2 = game:GetService("Workspace").Quests["Enemy Jarldom"]
+local Event = game:GetService("ReplicatedStorage").Quests
+Event:FireServer(A_1, A_2)
+
+
+
+        end
+    else
+        _G.Basic = false
+    end
+end)
+
+quest:CreateToggle("Auto Quest Zone 4", function(arg) --the (arg) is if the checkbox is toggled or not
+    if arg then
+        _G.Basic = true 
+        while wait(0) and _G.Basic do
+local A_1 = "Quest"
+local A_2 = game:GetService("Workspace").Quests["Desert Stronghold"]
+local Event = game:GetService("ReplicatedStorage").Quests
+Event:FireServer(A_1, A_2)
+
+
+
+        end
+    else
+        _G.Basic = false
+    end
+end)
+
+quest:CreateToggle("Auto Quest Zone 5", function(arg) --the (arg) is if the checkbox is toggled or not
+    if arg then
+        _G.Basic = true 
+        while wait(0) and _G.Basic do
+ local A_1 = "Quest"
+local A_2 = game:GetService("Workspace").Quests["Mysterious Orient"]
+local Event = game:GetService("ReplicatedStorage").Quests
+Event:FireServer(A_1, A_2)
+
+
+
+        end
+    else
+        _G.Basic = false
+    end
+end)
+
+quest:CreateToggle("Auto Quest Zone 6", function(arg) --the (arg) is if the checkbox is toggled or not
+    if arg then
+        _G.Basic = true 
+        while wait(0) and _G.Basic do
+local A_1 = "Quest"
+local A_2 = game:GetService("Workspace").Quests["Deadly Deadlands"]
+local Event = game:GetService("ReplicatedStorage").Quests
+Event:FireServer(A_1, A_2)
+
+
+
+        end
+    else
+        _G.Basic = false
+    end
+end)
+
+quest:CreateToggle("Auto Quest Zone 7", function(arg) --the (arg) is if the checkbox is toggled or not
+    if arg then
+        _G.Basic = true 
+        while wait(0) and _G.Basic do
+local A_1 = "Quest"
+local A_2 = game:GetService("Workspace").Quests["Atlantis Ruins"]
+local Event = game:GetService("ReplicatedStorage").Quests
+Event:FireServer(A_1, A_2)
+
+
+
+        end
+    else
+        _G.Basic = false
+    end
+end)
+
+quest:CreateToggle("Auto Quest Zone 8", function(arg) --the (arg) is if the checkbox is toggled or not
+    if arg then
+        _G.Basic = true 
+        while wait(0) and _G.Basic do
+ local A_1 = "Quest"
+local A_2 = game:GetService("Workspace").Quests["Floating Isles"]
+local Event = game:GetService("ReplicatedStorage").Quests
+Event:FireServer(A_1, A_2)
+
+
+
+        end
+    else
+        _G.Basic = false
+    end
+end)
+
+eggs:CreateToggle("Auto Buy Tier8 Eggs", function(arg) --the (arg) is if the checkbox is toggled or not
+    if arg then
+        _G.Basic = true 
+        while wait(0) and _G.Basic do
+ local A_1 = "Quest"
+local A_2 = game:GetService("Workspace").Quests["Peaceful Keep"]
+local Event = game:GetService("ReplicatedStorage").Quests
+Event:FireServer(A_1, A_2)
+
+
+
+        end
+    else
+        _G.Basic = false
+    end
+end)
+
+AutoTab:CreateButton("Destroy Gui :D", function() --you dont need "arg" for a button
+game:GetService("CoreGui").uiui:Destroy()
+end)
+
+teleports:CreateButton("Zone 1", function() --you dont need "arg" for a button
+game.Players.LocalPlayer.character.HumanoidRootPart.CFrame = CFrame.new(-338.436218, 8.00754261, -91.157608)
+end)
+
+teleports:CreateButton("Zone 2", function() --you dont need "arg" for a button
+game.Players.LocalPlayer.character.HumanoidRootPart.CFrame = CFrame.new(43583.0117, 8.00754261, -67.2682953)
+end)
+
+teleports:CreateButton("Zone 3", function() --you dont need "arg" for a button
+game.Players.LocalPlayer.character.HumanoidRootPart.CFrame = CFrame.new(77181.9688, 8.00754356, -64.9859467)
+end)
+
+teleports:CreateButton("Zone 4", function() --you dont need "arg" for a button
+game.Players.LocalPlayer.character.HumanoidRootPart.CFrame = CFrame.new(-283.9617, 8.00754261, 42293.2852)
+end)
+
+teleports:CreateButton("Zone 5", function() --you dont need "arg" for a button
+game.Players.LocalPlayer.character.HumanoidRootPart.CFrame = CFrame.new(57771.1133, 8.00754261, 42308.832)
+end)
+
+teleports:CreateButton("Zone 6", function() --you dont need "arg" for a button
+game.Players.LocalPlayer.character.HumanoidRootPart.CFrame = CFrame.new(87387.1172, 8.00754261, -85.7651901)
+end)
+
+teleports:CreateButton("Zone 7", function() --you dont need "arg" for a button
+game.Players.LocalPlayer.character.HumanoidRootPart.CFrame = CFrame.new(124737.883, 8.00758076, -76.1513748)
+end)
+
+teleports:CreateButton("Zone 8", function() --you dont need "arg" for a button
+game.Players.LocalPlayer.character.HumanoidRootPart.CFrame = CFrame.new(162247.703, 8.00594044, -19.0590839)
+end)
+
+--| Anti AFK | By Altix#3395
+    local Virtual = game:service'VirtualUser'
+    game:service'Players'.LocalPlayer.Idled:connect(function()
+        Virtual:CaptureController()
+        Virtual:ClickButton2(Vector2.new())
+        wait(2)
+    end)

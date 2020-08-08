@@ -1,0 +1,221 @@
+--https://www.roblox.com/games/3135436676/Legend-Hunt
+
+
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/preztel/AzureLibrary/master/uilib.lua", true))()
+
+local AutoTab = Library:CreateTab("Combo Clickers GUI","things", true)
+local teleports = Library:CreateTab("Teleports","things", true)
+local eggs = Library:CreateTab("Auto Buy Eggs","things", true)
+local credits = Library:CreateTab("Credits","things", true)
+
+
+credits:CreateButton("Our Discords", function() --you dont need "arg" for a button
+game:GetService("CoreGui").uiui:nothing()
+end)
+
+credits:CreateButton("masterkyllian#1723", function() --you dont need "arg" for a button
+game:GetService("CoreGui").uiui:nothing()
+end)
+
+credits:CreateButton("https://discord.gg/Sr8exX4", function() --you dont need "arg" for a button
+game:GetService("CoreGui").uiui:nothing()
+end)
+
+credits:CreateButton("bsoleil31FR[inchala ptn]#9001", function() --you dont need "arg" for a button
+game:GetService("CoreGui").uiui:nothing()
+end)
+
+credits:CreateButton("https://discord.gg/PdUTrVG", function() --you dont need "arg" for a button
+game:GetService("CoreGui").uiui:nothing()
+end)
+
+credits:CreateButton("Big C#5347", function() --you dont need "arg" for a button
+game:GetService("CoreGui").uiui:nothing()
+end)
+
+AutoTab:CreateToggle("Auto Click", function(arg) --the (arg) is if the checkbox is toggled or not
+    if arg then
+        _G.LULU = true 
+        while wait(0) and _G.LULU do
+            if game.Players.LocalPlayer.Character:FindFirstChildOfClass("Tool") then
+            game.Players.LocalPlayer.Character:FindFirstChildOfClass("Tool"):Activate()
+    end
+end
+
+    else
+        _G.LULU = false
+    end
+end)
+
+AutoTab:CreateToggle("Speed Hack 70", function(arg) --the (arg) is if the checkbox is toggled or not
+    if arg then
+        _G.Basic = true 
+        while wait(0) and _G.Basic do
+            game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 70
+        end
+    else
+        _G.Basic = false
+    end
+end)
+
+AutoTab:CreateToggle("Auto Rebirth", function(arg) --the (arg) is if the checkbox is toggled or not
+    if arg then
+        _G.Basic = true 
+        while wait(0) and _G.Basic do
+         local Event = game:GetService("ReplicatedStorage").Events.rebirth
+Event:InvokeServer()
+   
+        end
+    else
+        _G.Basic = false
+    end
+end)
+
+eggs:CreateToggle("Auto Buy Common Egg", function(arg) --the (arg) is if the checkbox is toggled or not
+    if arg then
+        _G.Basic = true 
+        while wait(0) and _G.Basic do
+            local A_1 = "Open"
+            local A_2 = "Common"
+            local Event = game:GetService("ReplicatedStorage").Events.eggControl
+            Event:FireServer(A_1, A_2)
+
+        end
+    else
+        _G.Basic = false
+    end
+end)
+
+eggs:CreateToggle("Auto Buy Uncommon Egg", function(arg) --the (arg) is if the checkbox is toggled or not
+    if arg then
+        _G.Basic = true 
+        while wait(0) and _G.Basic do
+            local A_1 = "Open"
+            local A_2 = "Uncommon"
+            local Event = game:GetService("ReplicatedStorage").Events.eggControl
+            Event:FireServer(A_1, A_2)
+
+        end
+    else
+        _G.Basic = false
+    end
+end)
+
+eggs:CreateToggle("Auto Buy Royal Egg", function(arg) --the (arg) is if the checkbox is toggled or not
+    if arg then
+        _G.Basic = true 
+        while wait(0) and _G.Basic do
+            local A_1 = "Open"
+            local A_2 = "Royal"
+            local Event = game:GetService("ReplicatedStorage").Events.eggControl
+            Event:FireServer(A_1, A_2)
+
+        end
+    else
+        _G.Basic = false
+    end
+end)
+
+eggs:CreateToggle("Auto Buy Angelic Egg", function(arg) --the (arg) is if the checkbox is toggled or not
+    if arg then
+        _G.Basic = true 
+        while wait(0) and _G.Basic do
+            local A_1 = "Open"
+            local A_2 = "Angelic"
+            local Event = game:GetService("ReplicatedStorage").Events.eggControl
+            Event:FireServer(A_1, A_2)
+
+        end
+    else
+        _G.Basic = false
+    end
+end)
+
+eggs:CreateToggle("Auto Buy Demonic Egg", function(arg) --the (arg) is if the checkbox is toggled or not
+    if arg then
+        _G.Basic = true 
+        while wait(0) and _G.Basic do
+            local A_1 = "Open"
+            local A_2 = "Demonic"
+            local Event = game:GetService("ReplicatedStorage").Events.eggControl
+            Event:FireServer(A_1, A_2)
+
+        end
+    else
+        _G.Basic = false
+    end
+end)
+
+eggs:CreateToggle("Auto Buy Exotic Egg", function(arg) --the (arg) is if the checkbox is toggled or not
+    if arg then
+        _G.Basic = true 
+        while wait(0) and _G.Basic do
+            local A_1 = "Open"
+            local A_2 = "exotic"
+            local Event = game:GetService("ReplicatedStorage").Events.eggControl
+            Event:FireServer(A_1, A_2)
+
+        end
+    else
+        _G.Basic = false
+    end
+end)
+
+eggs:CreateToggle("Auto Buy Emathyest Egg", function(arg) --the (arg) is if the checkbox is toggled or not
+    if arg then
+        _G.Basic = true 
+        while wait(0) and _G.Basic do
+            local A_1 = "Open"
+            local A_2 = "Emathyest"
+            local Event = game:GetService("ReplicatedStorage").Events.eggControl
+            Event:FireServer(A_1, A_2)
+
+        end
+    else
+        _G.Basic = false
+    end
+end)
+
+AutoTab:CreateButton("Destroy Gui :D", function() --you dont need "arg" for a button
+game:GetService("CoreGui").uiui:Destroy()
+end)
+
+teleports:CreateButton("Spawn", function() --you dont need "arg" for a button
+game.Players.LocalPlayer.character.HumanoidRootPart.CFrame = CFrame.new(-269.874481, 3.09750366, -77.7202377)
+end)
+
+teleports:CreateButton("Zone 1", function() --you dont need "arg" for a button
+game.Players.LocalPlayer.character.HumanoidRootPart.CFrame = CFrame.new(-417.210754, 3.00753164, -213.892853)
+end)
+
+teleports:CreateButton("Zone 2", function() --you dont need "arg" for a button
+game.Players.LocalPlayer.character.HumanoidRootPart.CFrame = CFrame.new(-411.76297, 3.00753164, -366.507477)
+end)
+
+teleports:CreateButton("Zone 3", function() --you dont need "arg" for a button
+game.Players.LocalPlayer.character.HumanoidRootPart.CFrame = CFrame.new(-394.080505, 3.08753157, 161.521072)
+end)
+
+teleports:CreateButton("Zone 4", function() --you dont need "arg" for a button
+game.Players.LocalPlayer.character.HumanoidRootPart.CFrame = CFrame.new(-665.92804, 3.08753157, -79.182373)
+end)
+
+teleports:CreateButton("Zone 5", function() --you dont need "arg" for a button
+game.Players.LocalPlayer.character.HumanoidRootPart.CFrame = CFrame.new(-856.589539, 3.08753157, -79.7124634)
+end)
+
+teleports:CreateButton("Zone 6", function() --you dont need "arg" for a button
+game.Players.LocalPlayer.character.HumanoidRootPart.CFrame = CFrame.new(-1047.54639, 3.18262768, -82.7457809)
+end)
+
+teleports:CreateButton("Sell", function() --you dont need "arg" for a button
+game.Players.LocalPlayer.character.HumanoidRootPart.CFrame = CFrame.new(-288.937866, 3.0974977, -103.371521)
+end)
+
+--| Anti AFK | By Altix#3395
+    local Virtual = game:service'VirtualUser'
+    game:service'Players'.LocalPlayer.Idled:connect(function()
+        Virtual:CaptureController()
+        Virtual:ClickButton2(Vector2.new())
+        wait(2)
+    end)

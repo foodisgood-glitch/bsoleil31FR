@@ -1,0 +1,618 @@
+--https://www.roblox.com/games/3290249490/NEW-WORLD-Cotton-Candy-Simulator
+
+
+
+
+
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/preztel/AzureLibrary/master/uilib.lua", true))()
+
+local AutoTab = Library:CreateTab("Cotton Candy Simulator GUI","things", true)
+local teleportsgems = Library:CreateTab("Teleportsgems","things", true)
+local teleportssugars = Library:CreateTab("Teleportssugars","things", true)
+local credits = Library:CreateTab("Credits","things", true)
+
+
+credits:CreateButton("Our Discords", function() --you dont need "arg" for a button
+game:GetService("CoreGui").uiui:nothing()
+end)
+
+credits:CreateButton("masterkyllian#1723", function() --you dont need "arg" for a button
+game:GetService("CoreGui").uiui:nothing()
+end)
+
+credits:CreateButton("https://discord.gg/Sr8exX4", function() --you dont need "arg" for a button
+game:GetService("CoreGui").uiui:nothing()
+end)
+
+credits:CreateButton("bsoleil31FR[inchala ptn]#9001", function() --you dont need "arg" for a button
+game:GetService("CoreGui").uiui:nothing()
+end)
+
+credits:CreateButton("https://discord.gg/PdUTrVG", function() --you dont need "arg" for a button
+game:GetService("CoreGui").uiui:nothing()
+end)
+
+credits:CreateButton("Big C#5347", function() --you dont need "arg" for a button
+game:GetService("CoreGui").uiui:nothing()
+end)
+
+AutoTab:CreateToggle("Auto Click", function(arg) --the (arg) is if the checkbox is toggled or not
+    if arg then
+        _G.LULU = true 
+        while wait(0) and _G.LULU do
+            if game.Players.LocalPlayer.Character:FindFirstChildOfClass("Tool") then
+            game.Players.LocalPlayer.Character:FindFirstChildOfClass("Tool"):Activate()
+    end
+end
+
+    else
+        _G.LULU = false
+    end
+end)
+
+AutoTab:CreateToggle("Speed Hack 100", function(arg) --the (arg) is if the checkbox is toggled or not
+    if arg then
+        _G.Basic = true 
+        while wait(0) and _G.Basic do
+            game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 100
+        end
+    else
+        _G.Basic = false
+    end
+end)
+
+teleportsgems:CreateToggle("Auto To Gem 1", function(arg) --the (arg) is if the checkbox is toggled or not
+    if arg then
+        _G.Basic = true 
+        while wait(0) and _G.Basic do
+            game.Players.LocalPlayer.character.HumanoidRootPart.CFrame = CFrame.new(1107.55334, 48.9050064, 35.1634674)
+            
+        end
+    else
+        _G.Basic = false
+    end
+end)
+
+teleportsgems:CreateToggle("Auto To Gem 2", function(arg) --the (arg) is if the checkbox is toggled or not
+    if arg then
+        _G.Basic = true 
+        while wait(0) and _G.Basic do
+            game.Players.LocalPlayer.character.HumanoidRootPart.CFrame = CFrame.new(1076.90271, 49.0075188, 69.2040787)
+            
+        end
+    else
+        _G.Basic = false
+    end
+end)
+
+teleportsgems:CreateToggle("Auto To Gem 3", function(arg) --the (arg) is if the checkbox is toggled or not
+    if arg then
+        _G.Basic = true 
+        while wait(0) and _G.Basic do
+            game.Players.LocalPlayer.character.HumanoidRootPart.CFrame = CFrame.new(1140.24414, 49.0075188, 86.1909332)
+            
+        end
+    else
+        _G.Basic = false
+    end
+end)
+
+teleportsgems:CreateToggle("Auto To Gem 4", function(arg) --the (arg) is if the checkbox is toggled or not
+    if arg then
+        _G.Basic = true 
+        while wait(0) and _G.Basic do
+            game.Players.LocalPlayer.character.HumanoidRootPart.CFrame = CFrame.new(1133.46265, 49.3525391, 125.111145)
+            
+        end
+    else
+        _G.Basic = false
+    end
+end)
+
+teleportsgems:CreateToggle("Auto To Gem 5", function(arg) --the (arg) is if the checkbox is toggled or not
+    if arg then
+        _G.Basic = true 
+        while wait(0) and _G.Basic do
+            game.Players.LocalPlayer.character.HumanoidRootPart.CFrame = CFrame.new(1128.18384, 46.2337112, 175.616516)
+            
+        end
+    else
+        _G.Basic = false
+    end
+end)
+
+teleportsgems:CreateToggle("Auto To Gem 6", function(arg) --the (arg) is if the checkbox is toggled or not
+    if arg then
+        _G.Basic = true 
+        while wait(0) and _G.Basic do
+            game.Players.LocalPlayer.character.HumanoidRootPart.CFrame = CFrame.new(1116.51941, 45.035923, 218.926208)
+            
+        end
+    else
+        _G.Basic = false
+    end
+end)
+
+teleportsgems:CreateToggle("Auto To Gem 7", function(arg) --the (arg) is if the checkbox is toggled or not
+    if arg then
+        _G.Basic = true 
+        while wait(0) and _G.Basic do
+            game.Players.LocalPlayer.character.HumanoidRootPart.CFrame = CFrame.new(1089.52026, 44.1537857, 250.260864)
+            
+        end
+    else
+        _G.Basic = false
+    end
+end)
+
+teleportsgems:CreateToggle("Auto To Gem 8", function(arg) --the (arg) is if the checkbox is toggled or not
+    if arg then
+        _G.Basic = true 
+        while wait(0) and _G.Basic do
+            game.Players.LocalPlayer.character.HumanoidRootPart.CFrame = CFrame.new(1040.89172, 41.589325, 264.684937)
+            
+        end
+    else
+        _G.Basic = false
+    end
+end)
+
+teleportsgems:CreateToggle("Auto To Gem 9", function(arg) --the (arg) is if the checkbox is toggled or not
+    if arg then
+        _G.Basic = true 
+        while wait(0) and _G.Basic do
+            game.Players.LocalPlayer.character.HumanoidRootPart.CFrame = CFrame.new(1006.08826, 40.5287666, 253.258255)
+            
+        end
+    else
+        _G.Basic = false
+    end
+end)
+
+teleportsgems:CreateToggle("Auto To Gem 10", function(arg) --the (arg) is if the checkbox is toggled or not
+    if arg then
+        _G.Basic = true 
+        while wait(0) and _G.Basic do
+            game.Players.LocalPlayer.character.HumanoidRootPart.CFrame = CFrame.new(975.242188, 39.9229279, 214.93663)
+            
+        end
+    else
+        _G.Basic = false
+    end
+end)
+
+teleportsgems:CreateToggle("Auto To Gem 11", function(arg) --the (arg) is if the checkbox is toggled or not
+    if arg then
+        _G.Basic = true 
+        while wait(0) and _G.Basic do
+            game.Players.LocalPlayer.character.HumanoidRootPart.CFrame = CFrame.new(932.03479, 32.7245178, 196.780396)
+            
+        end
+    else
+        _G.Basic = false
+    end
+end)
+
+teleportsgems:CreateToggle("Auto To Gem 12", function(arg) --the (arg) is if the checkbox is toggled or not
+    if arg then
+        _G.Basic = true 
+        while wait(0) and _G.Basic do
+            game.Players.LocalPlayer.character.HumanoidRootPart.CFrame = CFrame.new(880.038147, 28.7882519, 215.712769)
+            
+        end
+    else
+        _G.Basic = false
+    end
+end)
+
+teleportsgems:CreateToggle("Auto To Gem 13", function(arg) --the (arg) is if the checkbox is toggled or not
+    if arg then
+        _G.Basic = true 
+        while wait(0) and _G.Basic do
+            game.Players.LocalPlayer.character.HumanoidRootPart.CFrame = CFrame.new(850.76416, 29.1462193, 246.051514)
+            
+        end
+    else
+        _G.Basic = false
+    end
+end)
+
+teleportsgems:CreateToggle("Auto To Gem 14", function(arg) --the (arg) is if the checkbox is toggled or not
+    if arg then
+        _G.Basic = true 
+        while wait(0) and _G.Basic do
+            game.Players.LocalPlayer.character.HumanoidRootPart.CFrame = CFrame.new(787.297852, 23.623827, 204.04303)
+            
+        end
+    else
+        _G.Basic = false
+    end
+end)
+
+teleportsgems:CreateToggle("Auto To Gem 15", function(arg) --the (arg) is if the checkbox is toggled or not
+    if arg then
+        _G.Basic = true 
+        while wait(0) and _G.Basic do
+            game.Players.LocalPlayer.character.HumanoidRootPart.CFrame = CFrame.new(849.711975, 47.8285103, 3.82956266)
+            
+        end
+    else
+        _G.Basic = false
+    end
+end)
+
+teleportsgems:CreateToggle("Auto To Gem 16", function(arg) --the (arg) is if the checkbox is toggled or not
+    if arg then
+        _G.Basic = true 
+        while wait(0) and _G.Basic do
+            game.Players.LocalPlayer.character.HumanoidRootPart.CFrame = CFrame.new(896.428162, 49.0075302, 8.8043232)
+            
+        end
+    else
+        _G.Basic = false
+    end
+end)
+
+teleportsgems:CreateToggle("Auto To Gem 17", function(arg) --the (arg) is if the checkbox is toggled or not
+    if arg then
+        _G.Basic = true 
+        while wait(0) and _G.Basic do
+            game.Players.LocalPlayer.character.HumanoidRootPart.CFrame = CFrame.new(840.428833, 49.0075188, -31.627697)
+            
+        end
+    else
+        _G.Basic = false
+    end
+end)
+
+teleportsgems:CreateToggle("Auto To Gem 18", function(arg) --the (arg) is if the checkbox is toggled or not
+    if arg then
+        _G.Basic = true 
+        while wait(0) and _G.Basic do
+            game.Players.LocalPlayer.character.HumanoidRootPart.CFrame = CFrame.new(797.059448, 62.3736191, -32.9114838)
+            
+        end
+    else
+        _G.Basic = false
+    end
+end)
+
+teleportsgems:CreateToggle("Auto To Gem 19", function(arg) --the (arg) is if the checkbox is toggled or not
+    if arg then
+        _G.Basic = true 
+        while wait(0) and _G.Basic do
+            game.Players.LocalPlayer.character.HumanoidRootPart.CFrame = CFrame.new(833.315918, 96.346962, -83.0700455)
+            
+        end
+    else
+        _G.Basic = false
+    end
+end)
+
+teleportsgems:CreateToggle("Auto To Gem 20", function(arg) --the (arg) is if the checkbox is toggled or not
+    if arg then
+        _G.Basic = true 
+        while wait(0) and _G.Basic do
+            game.Players.LocalPlayer.character.HumanoidRootPart.CFrame = CFrame.new(891.860229, 117.252319, -59.1221848)
+            
+        end
+    else
+        _G.Basic = false
+    end
+end)
+
+teleportsgems:CreateToggle("Auto To Gem 21", function(arg) --the (arg) is if the checkbox is toggled or not
+    if arg then
+        _G.Basic = true 
+        while wait(0) and _G.Basic do
+            game.Players.LocalPlayer.character.HumanoidRootPart.CFrame = CFrame.new(929.518738, 123.704788, -37.1647987)
+            
+        end
+    else
+        _G.Basic = false
+    end
+end)
+
+teleportsgems:CreateToggle("Auto To Gem 22", function(arg) --the (arg) is if the checkbox is toggled or not
+    if arg then
+        _G.Basic = true 
+        while wait(0) and _G.Basic do
+            game.Players.LocalPlayer.character.HumanoidRootPart.CFrame = CFrame.new(943.630127, 125.029724, -9.0071497)
+            
+      
+            
+        end
+    else
+        _G.Basic = false
+    end
+end)
+
+teleportssugars:CreateToggle("Auto To Sugar 1", function(arg) --the (arg) is if the checkbox is toggled or not
+    if arg then
+        _G.Basic = true 
+        while wait(0) and _G.Basic do
+            game.Players.LocalPlayer.character.HumanoidRootPart.CFrame = CFrame.new(966.066162, -163.192505, 32817.5)
+            
+        end
+    else
+        _G.Basic = false
+    end
+end)
+
+teleportssugars:CreateToggle("Auto To Sugar 2", function(arg) --the (arg) is if the checkbox is toggled or not
+    if arg then
+        _G.Basic = true 
+        while wait(0) and _G.Basic do
+            game.Players.LocalPlayer.character.HumanoidRootPart.CFrame = CFrame.new(1013.72852, -162.914902, 32833.9766)
+            
+        end
+    else
+        _G.Basic = false
+    end
+end)
+
+teleportssugars:CreateToggle("Auto To Sugar 3", function(arg) --the (arg) is if the checkbox is toggled or not
+    if arg then
+        _G.Basic = true 
+        while wait(0) and _G.Basic do
+            game.Players.LocalPlayer.character.HumanoidRootPart.CFrame = CFrame.new(1043.6449, -163.192505, 32826.6016)
+            
+        end
+    else
+        _G.Basic = false
+    end
+end)
+
+teleportssugars:CreateToggle("Auto To Sugar 4", function(arg) --the (arg) is if the checkbox is toggled or not
+    if arg then
+        _G.Basic = true 
+        while wait(0) and _G.Basic do
+            game.Players.LocalPlayer.character.HumanoidRootPart.CFrame = CFrame.new(1040.61414, -163.192505, 32780.6992)
+            
+        end
+    else
+        _G.Basic = false
+    end
+end)
+
+teleportssugars:CreateToggle("Auto To Sugar 5", function(arg) --the (arg) is if the checkbox is toggled or not
+    if arg then
+        _G.Basic = true 
+        while wait(0) and _G.Basic do
+            game.Players.LocalPlayer.character.HumanoidRootPart.CFrame = CFrame.new(1031.33545, -163.192505, 32743.5059)
+            
+        end
+    else
+        _G.Basic = false
+    end
+end)
+
+teleportssugars:CreateToggle("Auto To Sugar 6", function(arg) --the (arg) is if the checkbox is toggled or not
+    if arg then
+        _G.Basic = true 
+        while wait(0) and _G.Basic do
+            game.Players.LocalPlayer.character.HumanoidRootPart.CFrame = CFrame.new(1078.12073, -163.192505, 32736.8242)
+            
+        end
+    else
+        _G.Basic = false
+    end
+end)
+
+teleportssugars:CreateToggle("Auto To Sugar 7", function(arg) --the (arg) is if the checkbox is toggled or not
+    if arg then
+        _G.Basic = true 
+        while wait(0) and _G.Basic do
+            game.Players.LocalPlayer.character.HumanoidRootPart.CFrame = CFrame.new(1114.14587, -158.157471, 32767.0488)
+            
+        end
+    else
+        _G.Basic = false
+    end
+end)
+
+teleportssugars:CreateToggle("Auto To Sugar 8", function(arg) --the (arg) is if the checkbox is toggled or not
+    if arg then
+        _G.Basic = true 
+        while wait(0) and _G.Basic do
+            game.Players.LocalPlayer.character.HumanoidRootPart.CFrame = CFrame.new(1152.96179, -150.788437, 32789.5078)
+            
+        end
+    else
+        _G.Basic = false
+    end
+end)
+
+teleportssugars:CreateToggle("Auto To Sugar 9", function(arg) --the (arg) is if the checkbox is toggled or not
+    if arg then
+        _G.Basic = true 
+        while wait(0) and _G.Basic do
+            game.Players.LocalPlayer.character.HumanoidRootPart.CFrame = CFrame.new(1157.87354, -147.192505, 32878.2617)
+            
+        end
+    else
+        _G.Basic = false
+    end
+end)
+
+teleportssugars:CreateToggle("Auto To Sugar 10", function(arg) --the (arg) is if the checkbox is toggled or not
+    if arg then
+        _G.Basic = true 
+        while wait(0) and _G.Basic do
+            game.Players.LocalPlayer.character.HumanoidRootPart.CFrame = CFrame.new(1142.52917, -147.192505, 32910.2734)
+            
+        end
+    else
+        _G.Basic = false
+    end
+end)
+
+teleportssugars:CreateToggle("Auto To Sugar 11", function(arg) --the (arg) is if the checkbox is toggled or not
+    if arg then
+        _G.Basic = true 
+        while wait(0) and _G.Basic do
+            game.Players.LocalPlayer.character.HumanoidRootPart.CFrame = CFrame.new(1122.09656, -147.192505, 32954.4727)
+            
+        end
+    else
+        _G.Basic = false
+    end
+end)
+
+teleportssugars:CreateToggle("Auto To Sugar 12", function(arg) --the (arg) is if the checkbox is toggled or not
+    if arg then
+        _G.Basic = true 
+        while wait(0) and _G.Basic do
+            game.Players.LocalPlayer.character.HumanoidRootPart.CFrame = CFrame.new(1164.64941, -147.010818, 32951.6641)
+            
+        end
+    else
+        _G.Basic = false
+    end
+end)
+
+teleportssugars:CreateToggle("Auto To Sugar 13", function(arg) --the (arg) is if the checkbox is toggled or not
+    if arg then
+        _G.Basic = true 
+        while wait(0) and _G.Basic do
+            game.Players.LocalPlayer.character.HumanoidRootPart.CFrame = CFrame.new(1204.58582, -147.192505, 32920.0742)
+            
+        end
+    else
+        _G.Basic = false
+    end
+end)
+
+teleportssugars:CreateToggle("Auto To Sugar 14", function(arg) --the (arg) is if the checkbox is toggled or not
+    if arg then
+        _G.Basic = true 
+        while wait(0) and _G.Basic do
+            game.Players.LocalPlayer.character.HumanoidRootPart.CFrame = CFrame.new(1205.4032, -147.192505, 32875.6836)
+            
+        end
+    else
+        _G.Basic = false
+    end
+end)
+
+teleportssugars:CreateToggle("Auto To Sugar 15", function(arg) --the (arg) is if the checkbox is toggled or not
+    if arg then
+        _G.Basic = true 
+        while wait(0) and _G.Basic do
+            game.Players.LocalPlayer.character.HumanoidRootPart.CFrame = CFrame.new(1179.41675, -147.192505, 32846.0117)
+            
+        end
+    else
+        _G.Basic = false
+    end
+end)
+
+teleportssugars:CreateToggle("Auto To Sugar 16", function(arg) --the (arg) is if the checkbox is toggled or not
+    if arg then
+        _G.Basic = true 
+        while wait(0) and _G.Basic do
+            game.Players.LocalPlayer.character.HumanoidRootPart.CFrame = CFrame.new(1158.18591, -147.192505, 32839.4102)
+            
+        end
+    else
+        _G.Basic = false
+    end
+end)
+
+teleportssugars:CreateToggle("Auto To Sugar 17", function(arg) --the (arg) is if the checkbox is toggled or not
+    if arg then
+        _G.Basic = true 
+        while wait(0) and _G.Basic do
+            game.Players.LocalPlayer.character.HumanoidRootPart.CFrame = CFrame.new(1187.97131, -147.181747, 32990.3984)
+            
+        end
+    else
+        _G.Basic = false
+    end
+end)
+
+teleportssugars:CreateToggle("Auto To Sugar 18", function(arg) --the (arg) is if the checkbox is toggled or not
+    if arg then
+        _G.Basic = true 
+        while wait(0) and _G.Basic do
+            game.Players.LocalPlayer.character.HumanoidRootPart.CFrame = CFrame.new(1197.29468, -147.192505, 33030.7539)
+            
+        end
+    else
+        _G.Basic = false
+    end
+end)
+
+teleportssugars:CreateToggle("Auto To Sugar 19", function(arg) --the (arg) is if the checkbox is toggled or not
+    if arg then
+        _G.Basic = true 
+        while wait(0) and _G.Basic do
+            game.Players.LocalPlayer.character.HumanoidRootPart.CFrame = CFrame.new(1220.68835, -147.192505, 33060.3477)
+            
+        end
+    else
+        _G.Basic = false
+    end
+end)
+
+teleportssugars:CreateToggle("Auto To Sugar 20", function(arg) --the (arg) is if the checkbox is toggled or not
+    if arg then
+        _G.Basic = true 
+        while wait(0) and _G.Basic do
+            game.Players.LocalPlayer.character.HumanoidRootPart.CFrame = CFrame.new(1187.66321, -147.192505, 33090.4023)
+            
+        end
+    else
+        _G.Basic = false
+    end
+end)
+
+teleportssugars:CreateToggle("Auto To Sugar 21", function(arg) --the (arg) is if the checkbox is toggled or not
+    if arg then
+        _G.Basic = true 
+        while wait(0) and _G.Basic do
+            game.Players.LocalPlayer.character.HumanoidRootPart.CFrame = CFrame.new(1138.13818, -147.100418, 33115.3711)
+            
+        end
+    else
+        _G.Basic = false
+    end
+end)
+
+teleportssugars:CreateToggle("Auto To Sugar 22", function(arg) --the (arg) is if the checkbox is toggled or not
+    if arg then
+        _G.Basic = true 
+        while wait(0) and _G.Basic do
+            game.Players.LocalPlayer.character.HumanoidRootPart.CFrame = CFrame.new(1127.43005, -161.698517, 33224.1367)
+            
+      
+            
+        end
+    else
+        _G.Basic = false
+    end
+end)
+
+Autotab:CreateToggle("Auto Sell", function(arg) --the (arg) is if the checkbox is toggled or not
+    if arg then
+        _G.Basic = true 
+        while wait(0) and _G.Basic do
+            game.Players.LocalPlayer.character.HumanoidRootPart.CFrame = CFrame.new(947.94281, -163.19249, 32833.4961)
+            
+      
+            
+        end
+    else
+        _G.Basic = false
+    end
+end)
+
+--| Anti AFK | By Altix#3395
+    local Virtual = game:service'VirtualUser'
+    game:service'Players'.LocalPlayer.Idled:connect(function()
+        Virtual:CaptureController()
+        Virtual:ClickButton2(Vector2.new())
+        wait(2)
+    end)
+
+

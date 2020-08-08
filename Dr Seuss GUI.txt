@@ -1,0 +1,519 @@
+--https://www.roblox.com/games/3788547128/Dr-Seuss-Simulator-Summer-Pets
+
+
+
+
+
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/preztel/AzureLibrary/master/uilib.lua", true))()
+
+local AutoTab = Library:CreateTab("Dr Seuss GUI","things", true)
+local buy = Library:CreateTab("Auto Buy","things", true)
+local teleports = Library:CreateTab("Teleports","things", true)
+local eggs = Library:CreateTab("Auto Buy Eggs","things", true)
+local credits = Library:CreateTab("Credits","things", true)
+
+
+credits:CreateButton("Our Discords", function() --you dont need "arg" for a button
+game:GetService("CoreGui").uiui:nothing()
+end)
+
+credits:CreateButton("masterkyllian#1723", function() --you dont need "arg" for a button
+game:GetService("CoreGui").uiui:nothing()
+end)
+
+credits:CreateButton("https://discord.gg/Sr8exX4", function() --you dont need "arg" for a button
+game:GetService("CoreGui").uiui:nothing()
+end)
+
+credits:CreateButton("bsoleil31FR[inchala ptn]#9001", function() --you dont need "arg" for a button
+game:GetService("CoreGui").uiui:nothing()
+end)
+
+credits:CreateButton("https://discord.gg/PdUTrVG", function() --you dont need "arg" for a button
+game:GetService("CoreGui").uiui:nothing()
+end)
+
+credits:CreateButton("Big C#5347", function() --you dont need "arg" for a button
+game:GetService("CoreGui").uiui:nothing()
+end)
+
+AutoTab:CreateToggle("Auto Click", function(arg) --the (arg) is if the checkbox is toggled or not
+    if arg then
+        _G.LULU = true 
+        while wait(0) and _G.LULU do
+            if game.Players.LocalPlayer.Character:FindFirstChildOfClass("Tool") then
+            game.Players.LocalPlayer.Character:FindFirstChildOfClass("Tool"):Activate()
+    end
+end
+
+    else
+        _G.LULU = false
+    end
+end)
+
+AutoTab:CreateToggle("Speed Hack 100", function(arg) --the (arg) is if the checkbox is toggled or not
+    if arg then
+        _G.Basic = true 
+        while wait(0) and _G.Basic do
+            game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 100
+        end
+    else
+        _G.Basic = false
+    end
+end)
+
+buy:CreateToggle("Auto Buy ALL Books", function(arg) --the (arg) is if the checkbox is toggled or not
+    if arg then
+        _G.Basic = true 
+        while wait(0) and _G.Basic do
+            local A_1 = 1
+local Event = game:GetService("ReplicatedStorage").Events.Simulator.TryBuyAll
+Event:InvokeServer(A_1)
+
+        end
+    else
+        _G.Basic = false
+    end
+end)
+
+buy:CreateToggle("Auto Buy ALL Bags", function(arg) --the (arg) is if the checkbox is toggled or not
+    if arg then
+        _G.Basic = true 
+        while wait(0) and _G.Basic do
+           local A_1 = 2
+local Event = game:GetService("ReplicatedStorage").Events.Simulator.TryBuyAll
+Event:InvokeServer(A_1)
+        end
+    else
+        _G.Basic = false
+    end
+end)
+
+buy:CreateToggle("Auto Buy ALL Ranks", function(arg) --the (arg) is if the checkbox is toggled or not
+    if arg then
+        _G.Basic = true 
+        while wait(0) and _G.Basic do
+           local A_1 = 3
+local A_2 = 1
+local Event = game:GetService("ReplicatedStorage").Events.Simulator.TryBuy
+Event:InvokeServer(A_1, A_2)
+
+local A_1 = 3
+local A_2 = 2
+local Event = game:GetService("ReplicatedStorage").Events.Simulator.TryBuy
+Event:InvokeServer(A_1, A_2)
+
+local A_1 = 3
+local A_2 = 3
+local Event = game:GetService("ReplicatedStorage").Events.Simulator.TryBuy
+Event:InvokeServer(A_1, A_2)
+
+local A_1 = 3
+local A_2 = 4
+local Event = game:GetService("ReplicatedStorage").Events.Simulator.TryBuy
+Event:InvokeServer(A_1, A_2)
+
+local A_1 = 3
+local A_2 = 5
+local Event = game:GetService("ReplicatedStorage").Events.Simulator.TryBuy
+Event:InvokeServer(A_1, A_2)
+
+local A_1 = 3
+local A_2 = 6
+local Event = game:GetService("ReplicatedStorage").Events.Simulator.TryBuy
+Event:InvokeServer(A_1, A_2)
+
+local A_1 = 3
+local A_2 = 7
+local Event = game:GetService("ReplicatedStorage").Events.Simulator.TryBuy
+Event:InvokeServer(A_1, A_2)
+
+local A_1 = 3
+local A_2 = 8
+local Event = game:GetService("ReplicatedStorage").Events.Simulator.TryBuy
+Event:InvokeServer(A_1, A_2)
+
+local A_1 = 3
+local A_2 = 9
+local Event = game:GetService("ReplicatedStorage").Events.Simulator.TryBuy
+Event:InvokeServer(A_1, A_2)
+
+local A_1 = 3
+local A_2 = 10
+local Event = game:GetService("ReplicatedStorage").Events.Simulator.TryBuy
+Event:InvokeServer(A_1, A_2)
+
+local A_1 = 3
+local A_2 = 11
+local Event = game:GetService("ReplicatedStorage").Events.Simulator.TryBuy
+Event:InvokeServer(A_1, A_2)
+
+local A_1 = 3
+local A_2 = 12
+local Event = game:GetService("ReplicatedStorage").Events.Simulator.TryBuy
+Event:InvokeServer(A_1, A_2)
+
+local A_1 = 3
+local A_2 = 13
+local Event = game:GetService("ReplicatedStorage").Events.Simulator.TryBuy
+Event:InvokeServer(A_1, A_2)
+
+local A_1 = 3
+local A_2 = 14
+local Event = game:GetService("ReplicatedStorage").Events.Simulator.TryBuy
+Event:InvokeServer(A_1, A_2)
+
+local A_1 = 3
+local A_2 = 15
+local Event = game:GetService("ReplicatedStorage").Events.Simulator.TryBuy
+Event:InvokeServer(A_1, A_2)
+
+local A_1 = 3
+local A_2 = 16
+local Event = game:GetService("ReplicatedStorage").Events.Simulator.TryBuy
+Event:InvokeServer(A_1, A_2)
+
+local A_1 = 3
+local A_2 = 17
+local Event = game:GetService("ReplicatedStorage").Events.Simulator.TryBuy
+Event:InvokeServer(A_1, A_2)
+
+local A_1 = 3
+local A_2 = 18
+local Event = game:GetService("ReplicatedStorage").Events.Simulator.TryBuy
+Event:InvokeServer(A_1, A_2)
+
+local A_1 = 3
+local A_2 = 19
+local Event = game:GetService("ReplicatedStorage").Events.Simulator.TryBuy
+Event:InvokeServer(A_1, A_2)
+
+local A_1 = 3
+local A_2 = 20
+local Event = game:GetService("ReplicatedStorage").Events.Simulator.TryBuy
+Event:InvokeServer(A_1, A_2)
+
+local A_1 = 3
+local A_2 = 21
+local Event = game:GetService("ReplicatedStorage").Events.Simulator.TryBuy
+Event:InvokeServer(A_1, A_2)
+
+local A_1 = 3
+local A_2 = 22
+local Event = game:GetService("ReplicatedStorage").Events.Simulator.TryBuy
+Event:InvokeServer(A_1, A_2)
+
+local A_1 = 3
+local A_2 = 23
+local Event = game:GetService("ReplicatedStorage").Events.Simulator.TryBuy
+Event:InvokeServer(A_1, A_2)
+
+local A_1 = 3
+local A_2 = 24
+local Event = game:GetService("ReplicatedStorage").Events.Simulator.TryBuy
+Event:InvokeServer(A_1, A_2)
+
+local A_1 = 3
+local A_2 = 25
+local Event = game:GetService("ReplicatedStorage").Events.Simulator.TryBuy
+Event:InvokeServer(A_1, A_2)
+
+        end
+    else
+        _G.Basic = false
+    end
+end)
+
+eggs:CreateToggle("Auto Buy Basic Eggs", function(arg) --the (arg) is if the checkbox is toggled or not
+    if arg then
+        _G.Basic = true 
+        while wait(0) and _G.Basic do
+           local A_1 = 1
+local A_2 = 1
+local Event = game:GetService("ReplicatedStorage").Events.PurchasePetRequest
+Event:FireServer(A_1, A_2)
+
+        end
+    else
+        _G.Basic = false
+    end
+end)
+
+eggs:CreateToggle("Auto Buy Summer Eggs", function(arg) --the (arg) is if the checkbox is toggled or not
+    if arg then
+        _G.Basic = true 
+        while wait(0) and _G.Basic do
+           local A_1 = 24
+local A_2 = 1
+local Event = game:GetService("ReplicatedStorage").Events.PurchasePetRequest
+Event:FireServer(A_1, A_2)
+
+        end
+    else
+        _G.Basic = false
+    end
+end)
+
+eggs:CreateToggle("Auto Buy Rainbow Eggs", function(arg) --the (arg) is if the checkbox is toggled or not
+    if arg then
+        _G.Basic = true 
+        while wait(0) and _G.Basic do
+           local A_1 = 5
+local A_2 = 1
+local Event = game:GetService("ReplicatedStorage").Events.PurchasePetRequest
+Event:FireServer(A_1, A_2)
+
+        end
+    else
+        _G.Basic = false
+    end
+end)
+
+eggs:CreateToggle("Auto Buy Sneetch Eggs", function(arg) --the (arg) is if the checkbox is toggled or not
+    if arg then
+        _G.Basic = true 
+        while wait(0) and _G.Basic do
+           local A_1 = 7
+local A_2 = 1
+local Event = game:GetService("ReplicatedStorage").Events.PurchasePetRequest
+Event:FireServer(A_1, A_2)
+
+        end
+    else
+        _G.Basic = false
+    end
+end)
+
+eggs:CreateToggle("Auto Buy Mcgurkus Eggs", function(arg) --the (arg) is if the checkbox is toggled or not
+    if arg then
+        _G.Basic = true 
+        while wait(0) and _G.Basic do
+           local A_1 = 2
+local A_2 = 1
+local Event = game:GetService("ReplicatedStorage").Events.PurchasePetRequest
+Event:FireServer(A_1, A_2)
+
+        end
+    else
+        _G.Basic = false
+    end
+end)
+
+eggs:CreateToggle("Auto Buy Slide Eggs", function(arg) --the (arg) is if the checkbox is toggled or not
+    if arg then
+        _G.Basic = true 
+        while wait(0) and _G.Basic do
+           local A_1 = 9
+local A_2 = 1
+local Event = game:GetService("ReplicatedStorage").Events.PurchasePetRequest
+Event:FireServer(A_1, A_2)
+
+        end
+    else
+        _G.Basic = false
+    end
+end)
+
+eggs:CreateToggle("Auto Buy Stage Eggs", function(arg) --the (arg) is if the checkbox is toggled or not
+    if arg then
+        _G.Basic = true 
+        while wait(0) and _G.Basic do
+           local A_1 = 3
+local A_2 = 1
+local Event = game:GetService("ReplicatedStorage").Events.PurchasePetRequest
+Event:FireServer(A_1, A_2)
+
+        end
+    else
+        _G.Basic = false
+    end
+end)
+
+eggs:CreateToggle("Auto Buy Rhino Eggs", function(arg) --the (arg) is if the checkbox is toggled or not
+    if arg then
+        _G.Basic = true 
+        while wait(0) and _G.Basic do
+           local A_1 = 10
+local A_2 = 1
+local Event = game:GetService("ReplicatedStorage").Events.PurchasePetRequest
+Event:FireServer(A_1, A_2)
+
+        end
+    else
+        _G.Basic = false
+    end
+end)
+
+eggs:CreateToggle("Auto Buy DareDevil Eggs", function(arg) --the (arg) is if the checkbox is toggled or not
+    if arg then
+        _G.Basic = true 
+        while wait(0) and _G.Basic do
+           local A_1 = 8
+local A_2 = 1
+local Event = game:GetService("ReplicatedStorage").Events.PurchasePetRequest
+Event:FireServer(A_1, A_2)
+
+        end
+    else
+        _G.Basic = false
+    end
+end)
+
+eggs:CreateToggle("Auto Buy Horton Eggs", function(arg) --the (arg) is if the checkbox is toggled or not
+    if arg then
+        _G.Basic = true 
+        while wait(0) and _G.Basic do
+           local A_1 = 4
+local A_2 = 1
+local Event = game:GetService("ReplicatedStorage").Events.PurchasePetRequest
+Event:FireServer(A_1, A_2)
+
+        end
+    else
+        _G.Basic = false
+    end
+end)
+
+eggs:CreateToggle("Auto Buy FishBowl Eggs", function(arg) --the (arg) is if the checkbox is toggled or not
+    if arg then
+        _G.Basic = true 
+        while wait(0) and _G.Basic do
+           local A_1 = 6
+local A_2 = 1
+local Event = game:GetService("ReplicatedStorage").Events.PurchasePetRequest
+Event:FireServer(A_1, A_2)
+
+        end
+    else
+        _G.Basic = false
+    end
+end)
+
+eggs:CreateToggle("Auto Buy Pink Eggs", function(arg) --the (arg) is if the checkbox is toggled or not
+    if arg then
+        _G.Basic = true 
+        while wait(0) and _G.Basic do
+           local A_1 = 13
+local A_2 = 1
+local Event = game:GetService("ReplicatedStorage").Events.PurchasePetRequest
+Event:FireServer(A_1, A_2)
+
+        end
+    else
+        _G.Basic = false
+    end
+end)
+
+
+eggs:CreateToggle("Auto Buy Fox Eggs", function(arg) --the (arg) is if the checkbox is toggled or not
+    if arg then
+        _G.Basic = true 
+        while wait(0) and _G.Basic do
+           local A_1 = 12
+local A_2 = 1
+local Event = game:GetService("ReplicatedStorage").Events.PurchasePetRequest
+Event:FireServer(A_1, A_2)
+
+        end
+    else
+        _G.Basic = false
+    end
+end)
+
+
+eggs:CreateToggle("Auto Buy Maze Eggs", function(arg) --the (arg) is if the checkbox is toggled or not
+    if arg then
+        _G.Basic = true 
+        while wait(0) and _G.Basic do
+           local A_1 = 11
+local A_2 = 1
+local Event = game:GetService("ReplicatedStorage").Events.PurchasePetRequest
+Event:FireServer(A_1, A_2)
+
+        end
+    else
+        _G.Basic = false
+    end
+end)
+
+
+
+eggs:CreateToggle("Auto Buy Winter Eggs", function(arg) --the (arg) is if the checkbox is toggled or not
+    if arg then
+        _G.Basic = true 
+        while wait(0) and _G.Basic do
+           local A_1 = 15
+local A_2 = 1
+local Event = game:GetService("ReplicatedStorage").Events.PurchasePetRequest
+Event:FireServer(A_1, A_2)
+
+        end
+    else
+        _G.Basic = false
+    end
+end)
+
+eggs:CreateToggle("Auto Buy Think Eggs", function(arg) --the (arg) is if the checkbox is toggled or not
+    if arg then
+        _G.Basic = true 
+        while wait(0) and _G.Basic do
+           local A_1 = 22
+local A_2 = 1
+local Event = game:GetService("ReplicatedStorage").Events.PurchasePetRequest
+Event:FireServer(A_1, A_2)
+
+        end
+    else
+        _G.Basic = false
+    end
+end)
+
+
+
+AutoTab:CreateButton("Destroy Gui :D", function() --you dont need "arg" for a button
+game:GetService("CoreGui").uiui:Destroy()
+end)
+
+teleports:CreateButton("Sell", function() --you dont need "arg" for a button
+game.Players.LocalPlayer.character.HumanoidRootPart.CFrame = CFrame.new(224.039368, 1002.45245, 495.499054)
+end)
+
+teleports:CreateButton("Spawn", function() --you dont need "arg" for a button
+game.Players.LocalPlayer.character.HumanoidRootPart.CFrame = CFrame.new(191.660477, 1002.79633, 553.575806)
+end)
+
+teleports:CreateButton("Coins island", function() --you dont need "arg" for a button
+game.Players.LocalPlayer.character.HumanoidRootPart.CFrame = CFrame.new(4958.70361, -468.058197, 7574.84668)
+end)
+
+teleports:CreateButton("Popcorn Island", function() --you dont need "arg" for a button
+game.Players.LocalPlayer.character.HumanoidRootPart.CFrame = CFrame.new(239.348328, -468.058136, 426.805664)
+end)
+
+teleports:CreateButton("Donuts Island", function() --you dont need "arg" for a button
+game.Players.LocalPlayer.character.HumanoidRootPart.CFrame = CFrame.new(5144.41699, -468.058197, -4235.29102)
+end)
+
+teleports:CreateButton("Star Island", function() --you dont need "arg" for a button
+game.Players.LocalPlayer.character.HumanoidRootPart.CFrame = CFrame.new(4964.02393, 409.984253, 608.926697)
+end)
+
+teleports:CreateButton("Pink Lemon Island", function() --you dont need "arg" for a button
+game.Players.LocalPlayer.character.HumanoidRootPart.CFrame = CFrame.new(20842.043, -468.058258, 430.405823)
+end)
+
+teleports:CreateButton("Green Egg Island", function() --you dont need "arg" for a button
+game.Players.LocalPlayer.character.HumanoidRootPart.CFrame = CFrame.new(-7627.83301, -229.251297, 414.234039)
+end)
+
+teleports:CreateButton("Pet Zone", function() --you dont need "arg" for a button
+game.Players.LocalPlayer.character.HumanoidRootPart.CFrame = CFrame.new(171.847626, 669.799805, 51425.4141)
+end)
+
+--| Anti AFK | By Altix#3395
+    local Virtual = game:service'VirtualUser'
+    game:service'Players'.LocalPlayer.Idled:connect(function()
+        Virtual:CaptureController()
+        Virtual:ClickButton2(Vector2.new())
+        wait(2)
+    end)

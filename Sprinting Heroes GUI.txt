@@ -1,0 +1,280 @@
+--https://www.roblox.com/games/4546789281/Sprinting-Heroes
+
+
+
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/preztel/AzureLibrary/master/uilib.lua", true))()
+
+local AutoTab = Library:CreateTab("Sprinting Heroes GUI","things", true)
+local AutoRebirth = Library:CreateTab("Auto Rebirth","things", true)
+local eggs = Library:CreateTab("Auto Buy Eggs","things", true)
+local credits = Library:CreateTab("Credits","things", true)
+
+
+credits:CreateButton("Our Discords", function() --you dont need "arg" for a button
+game:GetService("CoreGui").uiui:nothing()
+end)
+
+credits:CreateButton("masterkyllian#1723", function() --you dont need "arg" for a button
+game:GetService("CoreGui").uiui:nothing()
+end)
+
+credits:CreateButton("https://discord.gg/Sr8exX4", function() --you dont need "arg" for a button
+game:GetService("CoreGui").uiui:nothing()
+end)
+
+credits:CreateButton("bsoleil31FR[inchala ptn]#9001", function() --you dont need "arg" for a button
+game:GetService("CoreGui").uiui:nothing()
+end)
+
+credits:CreateButton("https://discord.gg/PdUTrVG", function() --you dont need "arg" for a button
+game:GetService("CoreGui").uiui:nothing()
+end)
+
+credits:CreateButton("Big C#5347", function() --you dont need "arg" for a button
+game:GetService("CoreGui").uiui:nothing()
+end)
+
+AutoTab:CreateToggle("Speed Hack 100", function(arg) --the (arg) is if the checkbox is toggled or not
+    if arg then
+        _G.Basic = true 
+        while wait(0) and _G.Basic do
+            game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 100
+        end
+    else
+        _G.Basic = false
+    end
+end)
+
+AutoTab:CreateToggle("PVP Desable", function(arg) --the (arg) is if the checkbox is toggled or not
+    if arg then
+        _G.Basic = true 
+        while wait(0) and _G.Basic do
+            local A_1 = false
+local Event = game:GetService("ReplicatedStorage").Events.pvpEnabled
+Event:FireServer(A_1)
+        end
+    else
+        _G.Basic = false
+    end
+end)
+
+AutoRebirth:CreateToggle("Rebirth x1", function(arg) --the (arg) is if the checkbox is toggled or not
+    if arg then
+        _G.Basic = true 
+        while wait(0) and _G.Basic do
+               local A_1 = 1
+local Event = game:GetService("ReplicatedStorage").Events.rebirthFunction
+Event:InvokeServer(A_1)
+        end
+    else
+        _G.Basic = false
+    end
+end)
+
+AutoRebirth:CreateToggle("Rebirth x5", function(arg) --the (arg) is if the checkbox is toggled or not
+    if arg then
+        _G.Basic = true 
+        while wait(0) and _G.Basic do
+               local A_1 = 5
+local Event = game:GetService("ReplicatedStorage").Events.rebirthFunction
+Event:InvokeServer(A_1)
+        end
+    else
+        _G.Basic = false
+    end
+end)
+
+AutoRebirth:CreateToggle("Rebirth x10", function(arg) --the (arg) is if the checkbox is toggled or not
+    if arg then
+        _G.Basic = true 
+        while wait(0) and _G.Basic do
+               local A_1 = 10
+local Event = game:GetService("ReplicatedStorage").Events.rebirthFunction
+Event:InvokeServer(A_1)
+        end
+    else
+        _G.Basic = false
+    end
+end)
+
+AutoRebirth:CreateToggle("Rebirth x25", function(arg) --the (arg) is if the checkbox is toggled or not
+    if arg then
+        _G.Basic = true 
+        while wait(0) and _G.Basic do
+            local A_1 = 25
+local Event = game:GetService("ReplicatedStorage").Events.rebirthFunction
+Event:InvokeServer(A_1)
+
+        end
+    else
+        _G.Basic = false
+    end
+end)
+
+eggs:CreateToggle("Auto Buy Eggs X1k money", function(arg) --the (arg) is if the checkbox is toggled or not
+    if arg then
+        _G.Basic = true 
+        while wait(0) and _G.Basic do
+            local A_1 = "Pets"
+local A_2 = "Classic"
+local A_3 = false
+local Event = game:GetService("ReplicatedStorage").Events.GetRandomItem
+Event:InvokeServer(A_1, A_2, A_3)
+
+        end
+    else
+        _G.Basic = false
+    end
+end)
+
+eggs:CreateToggle("Auto Buy Eggs X2,5K money", function(arg) --the (arg) is if the checkbox is toggled or not
+    if arg then
+        _G.Basic = true 
+        while wait(0) and _G.Basic do
+            local A_1 = "Pets"
+local A_2 = "Robotic"
+local A_3 = false
+local Event = game:GetService("ReplicatedStorage").Events.GetRandomItem
+Event:InvokeServer(A_1, A_2, A_3)
+
+        end
+    else
+        _G.Basic = false
+    end
+end)
+
+eggs:CreateToggle("Auto Buy Eggs X5,5K money", function(arg) --the (arg) is if the checkbox is toggled or not
+    if arg then
+        _G.Basic = true 
+        while wait(0) and _G.Basic do
+           local A_1 = "Pets"
+local A_2 = "Superior"
+local A_3 = false
+local Event = game:GetService("ReplicatedStorage").Events.GetRandomItem
+Event:InvokeServer(A_1, A_2, A_3)
+        end
+    else
+        _G.Basic = false
+    end
+end)
+
+eggs:CreateToggle("Auto Buy Eggs X12100 money", function(arg) --the (arg) is if the checkbox is toggled or not
+    if arg then
+        _G.Basic = true 
+        while wait(0) and _G.Basic do
+           local A_1 = "Pets"
+local A_2 = "Energy"
+local A_3 = false
+local Event = game:GetService("ReplicatedStorage").Events.GetRandomItem
+Event:InvokeServer(A_1, A_2, A_3)
+        end
+    else
+        _G.Basic = false
+    end
+end)
+
+eggs:CreateToggle("Auto Buy Eggs X25k money", function(arg) --the (arg) is if the checkbox is toggled or not
+    if arg then
+        _G.Basic = true 
+        while wait(0) and _G.Basic do
+            local A_1 = "Pets"
+local A_2 = "Black and White"
+local A_3 = false
+local Event = game:GetService("ReplicatedStorage").Events.GetRandomItem
+Event:InvokeServer(A_1, A_2, A_3)
+
+        end
+    else
+        _G.Basic = false
+    end
+end)
+
+eggs:CreateToggle("Auto Buy Eggs X68500 money", function(arg) --the (arg) is if the checkbox is toggled or not
+    if arg then
+        _G.Basic = true 
+        while wait(0) and _G.Basic do
+            local A_1 = "Pets"
+local A_2 = "Rainbow"
+local A_3 = false
+local Event = game:GetService("ReplicatedStorage").Events.GetRandomItem
+Event:InvokeServer(A_1, A_2, A_3)
+
+        end
+    else
+        _G.Basic = false
+    end
+end)
+
+eggs:CreateToggle("Auto Buy Eggs X250500 money", function(arg) --the (arg) is if the checkbox is toggled or not
+    if arg then
+        _G.Basic = true 
+        while wait(0) and _G.Basic do
+            local A_1 = "Pets"
+local A_2 = "Dragon"
+local A_3 = false
+local Event = game:GetService("ReplicatedStorage").Events.GetRandomItem
+Event:InvokeServer(A_1, A_2, A_3)
+
+        end
+    else
+        _G.Basic = false
+    end
+end)
+
+eggs:CreateToggle("Auto Buy Eggs X350k money", function(arg) --the (arg) is if the checkbox is toggled or not
+    if arg then
+        _G.Basic = true 
+        while wait(0) and _G.Basic do
+            local A_1 = "Pets"
+local A_2 = "Whimsical"
+local A_3 = false
+local Event = game:GetService("ReplicatedStorage").Events.GetRandomItem
+Event:InvokeServer(A_1, A_2, A_3)
+
+        end
+    else
+        _G.Basic = false
+    end
+end)
+eggs:CreateToggle("Auto Buy Eggs X1 tokens", function(arg) --the (arg) is if the checkbox is toggled or not
+    if arg then
+        _G.Basic = true 
+        while wait(0) and _G.Basic do
+            local A_1 = "Pets"
+local A_2 = "Super Splash"
+local A_3 = false
+local Event = game:GetService("ReplicatedStorage").Events.GetRandomItem
+Event:InvokeServer(A_1, A_2, A_3)
+        end
+    else
+        _G.Basic = false
+    end
+end)
+
+eggs:CreateToggle("Auto Buy Eggs X10 tokens", function(arg) --the (arg) is if the checkbox is toggled or not
+    if arg then
+        _G.Basic = true 
+        while wait(0) and _G.Basic do
+            local A_1 = "Pets"
+local A_2 = "Ancient"
+local A_3 = false
+local Event = game:GetService("ReplicatedStorage").Events.GetRandomItem
+Event:InvokeServer(A_1, A_2, A_3)
+
+        end
+    else
+        _G.Basic = false
+    end
+end)
+
+AutoTab:CreateButton("Destroy Gui :D", function() --you dont need "arg" for a button
+game:GetService("CoreGui").uiui:Destroy()
+end)
+
+--| Anti AFK | By Altix#3395
+    local Virtual = game:service'VirtualUser'
+    game:service'Players'.LocalPlayer.Idled:connect(function()
+        Virtual:CaptureController()
+        Virtual:ClickButton2(Vector2.new())
+        wait(2)
+    end)
